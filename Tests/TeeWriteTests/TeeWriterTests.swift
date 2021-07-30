@@ -21,13 +21,13 @@ class TeeWriterTests: XCTestCase {
             // finish up waiting
             expectation.fulfill()
         }
-        
+
         // MARK: act
         // write the expected to the file
         file.write(exp.data(using: .ascii)!)
         // wait for the tee write to finish
         wait(for: [expectation], timeout: 0.2)
-        
+
         // MARK: assert
         // make sure we actual got what was expected!
         XCTAssertEqual(act, exp)
@@ -54,13 +54,13 @@ class TeeWriterTests: XCTestCase {
         let handle2 = FileHandle(fileDescriptor: fileno(file2))
         // create the TeeWriter to test, anything written to handle1 also writes to handle2
         _ = TeeWriter(handle1, also: handle2, written: { _ in expectation.fulfill() })
-        
+
         // MARK: act
         // write to handle1, should also write to handle2 if TeeWriter works
         handle1.write(exp)
         // wait for the write to be preformed
         wait(for: [expectation], timeout: 0.2)
-        
+
         // MARK: assert
         // seek to the start of handle2
         try handle2.seek(toOffset: 0)
@@ -68,7 +68,7 @@ class TeeWriterTests: XCTestCase {
         let act = try handle2.readToEnd()
         // is our actual value the same as the expected value?
         XCTAssertEqual(act, exp)
-        
+
         // MARK: annihilate
         try FileManager.default.removeItem(at: temp1) // remove temp1.txt
         try FileManager.default.removeItem(at: temp2) // remove temp2.txt
