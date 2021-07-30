@@ -70,6 +70,7 @@
 		AB8D94C326B48B0400BEEF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8D94D226B48B1700BEEF71 /* TeeWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeWriter.swift; sourceTree = "<group>"; };
 		AB8D94F326B4924900BEEF71 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB8D94F426B4970200BEEF71 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 		AB8D949026B48AC000BEEF71 = {
 			isa = PBXGroup;
 			children = (
+				AB8D94F426B4970200BEEF71 /* Package.swift */,
 				AB8D94F326B4924900BEEF71 /* README.md */,
 				AB8D94E026B48D2800BEEF71 /* Examples */,
 				AB8D94DE26B48D0D00BEEF71 /* Sources */,
@@ -139,29 +141,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AB8D94B326B48B0400BEEF71 /* TeeWriter */ = {
+		AB8D94B326B48B0400BEEF71 /* TeeWrite */ = {
 			isa = PBXGroup;
 			children = (
 				AB8D94B526B48B0400BEEF71 /* Info.plist */,
 				AB8D94B426B48B0400BEEF71 /* TeeWriter.h */,
 				AB8D94D226B48B1700BEEF71 /* TeeWriter.swift */,
 			);
-			path = TeeWriter;
+			path = TeeWrite;
 			sourceTree = "<group>";
 		};
-		AB8D94C026B48B0400BEEF71 /* TeeWriterTests */ = {
+		AB8D94C026B48B0400BEEF71 /* TeeWriteTests */ = {
 			isa = PBXGroup;
 			children = (
 				AB8D94C126B48B0400BEEF71 /* TeeWriterTests.swift */,
 				AB8D94C326B48B0400BEEF71 /* Info.plist */,
 			);
-			path = TeeWriterTests;
+			path = TeeWriteTests;
 			sourceTree = "<group>";
 		};
 		AB8D94DE26B48D0D00BEEF71 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AB8D94B326B48B0400BEEF71 /* TeeWriter */,
+				AB8D94B326B48B0400BEEF71 /* TeeWrite */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -169,7 +171,7 @@
 		AB8D94DF26B48D2100BEEF71 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				AB8D94C026B48B0400BEEF71 /* TeeWriterTests */,
+				AB8D94C026B48B0400BEEF71 /* TeeWriteTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -539,7 +541,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/TeeWriter/Info.plist;
+				INFOPLIST_FILE = Sources/TeeWrite/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,7 +571,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/TeeWriter/Info.plist;
+				INFOPLIST_FILE = Sources/TeeWrite/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -593,7 +595,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9XNX575S2;
-				INFOPLIST_FILE = Tests/TeeWriterTests/Info.plist;
+				INFOPLIST_FILE = Tests/TeeWriteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,7 +615,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9XNX575S2;
-				INFOPLIST_FILE = Tests/TeeWriterTests/Info.plist;
+				INFOPLIST_FILE = Tests/TeeWriteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
