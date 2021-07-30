@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB8D949F26B48AC000BEEF71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D949E26B48AC000BEEF71 /* ContentView.swift */; };
+		AB8D94A126B48AC100BEEF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8D94A026B48AC100BEEF71 /* Assets.xcassets */; };
+		AB8D94A426B48AC100BEEF71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8D94A326B48AC100BEEF71 /* Preview Assets.xcassets */; };
+		AB8D94BB26B48B0400BEEF71 /* TeeWrite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8D94B226B48B0400BEEF71 /* TeeWrite.framework */; };
+		AB8D94C226B48B0400BEEF71 /* TeeWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D94C126B48B0400BEEF71 /* TeeWriterTests.swift */; };
+		AB8D94C426B48B0400BEEF71 /* TeeWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8D94B426B48B0400BEEF71 /* TeeWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8D94C726B48B0400BEEF71 /* TeeWrite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8D94B226B48B0400BEEF71 /* TeeWrite.framework */; };
+		AB8D94C826B48B0400BEEF71 /* TeeWrite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB8D94B226B48B0400BEEF71 /* TeeWrite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB8D94D326B48B1700BEEF71 /* TeeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D94D226B48B1700BEEF71 /* TeeWriter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB8D94BC26B48B0400BEEF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB8D949126B48AC000BEEF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB8D94B126B48B0400BEEF71;
+			remoteInfo = TeeWriter;
+		};
+		AB8D94BE26B48B0400BEEF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB8D949126B48AC000BEEF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB8D949826B48AC000BEEF71;
+			remoteInfo = TeeWriterExample;
+		};
+		AB8D94C526B48B0400BEEF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB8D949126B48AC000BEEF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB8D94B126B48B0400BEEF71;
+			remoteInfo = TeeWriter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB8D94CC26B48B0400BEEF71 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB8D94C826B48B0400BEEF71 /* TeeWrite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB8D949926B48AC000BEEF71 /* TeeWriterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeeWriterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8D949E26B48AC000BEEF71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB8D94A026B48AC100BEEF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB8D94A326B48AC100BEEF71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB8D94A526B48AC100BEEF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8D94B226B48B0400BEEF71 /* TeeWrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TeeWrite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8D94B426B48B0400BEEF71 /* TeeWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeeWriter.h; sourceTree = "<group>"; };
+		AB8D94B526B48B0400BEEF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8D94BA26B48B0400BEEF71 /* TeeWriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeeWriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8D94C126B48B0400BEEF71 /* TeeWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeWriterTests.swift; sourceTree = "<group>"; };
+		AB8D94C326B48B0400BEEF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8D94D226B48B1700BEEF71 /* TeeWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeWriter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB8D949626B48AC000BEEF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D94C726B48B0400BEEF71 /* TeeWrite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8D94AF26B48B0400BEEF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8D94B726B48B0400BEEF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D94BB26B48B0400BEEF71 /* TeeWrite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB8D949026B48AC000BEEF71 = {
+			isa = PBXGroup;
+			children = (
+				AB8D94E026B48D2800BEEF71 /* Examples */,
+				AB8D94DE26B48D0D00BEEF71 /* Sources */,
+				AB8D94DF26B48D2100BEEF71 /* Tests */,
+				AB8D949A26B48AC000BEEF71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB8D949A26B48AC000BEEF71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D949926B48AC000BEEF71 /* TeeWriterExample.app */,
+				AB8D94B226B48B0400BEEF71 /* TeeWrite.framework */,
+				AB8D94BA26B48B0400BEEF71 /* TeeWriteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB8D949B26B48AC000BEEF71 /* TeeWriterExample */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D949E26B48AC000BEEF71 /* ContentView.swift */,
+				AB8D94A026B48AC100BEEF71 /* Assets.xcassets */,
+				AB8D94A526B48AC100BEEF71 /* Info.plist */,
+				AB8D94A226B48AC100BEEF71 /* Preview Content */,
+			);
+			path = TeeWriterExample;
+			sourceTree = "<group>";
+		};
+		AB8D94A226B48AC100BEEF71 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D94A326B48AC100BEEF71 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB8D94B326B48B0400BEEF71 /* TeeWriter */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D94B526B48B0400BEEF71 /* Info.plist */,
+				AB8D94B426B48B0400BEEF71 /* TeeWriter.h */,
+				AB8D94D226B48B1700BEEF71 /* TeeWriter.swift */,
+			);
+			path = TeeWriter;
+			sourceTree = "<group>";
+		};
+		AB8D94C026B48B0400BEEF71 /* TeeWriterTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D94C126B48B0400BEEF71 /* TeeWriterTests.swift */,
+				AB8D94C326B48B0400BEEF71 /* Info.plist */,
+			);
+			path = TeeWriterTests;
+			sourceTree = "<group>";
+		};
+		AB8D94DE26B48D0D00BEEF71 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D94B326B48B0400BEEF71 /* TeeWriter */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AB8D94DF26B48D2100BEEF71 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D94C026B48B0400BEEF71 /* TeeWriterTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		AB8D94E026B48D2800BEEF71 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D949B26B48AC000BEEF71 /* TeeWriterExample */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB8D94AD26B48B0400BEEF71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D94C426B48B0400BEEF71 /* TeeWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AB8D949826B48AC000BEEF71 /* TeeWriterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB8D94A826B48AC100BEEF71 /* Build configuration list for PBXNativeTarget "TeeWriterExample" */;
+			buildPhases = (
+				AB8D949526B48AC000BEEF71 /* Sources */,
+				AB8D949626B48AC000BEEF71 /* Frameworks */,
+				AB8D949726B48AC000BEEF71 /* Resources */,
+				AB8D94CC26B48B0400BEEF71 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB8D94C626B48B0400BEEF71 /* PBXTargetDependency */,
+			);
+			name = TeeWriterExample;
+			productName = TeeWriterExample;
+			productReference = AB8D949926B48AC000BEEF71 /* TeeWriterExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB8D94B126B48B0400BEEF71 /* TeeWrite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB8D94C926B48B0400BEEF71 /* Build configuration list for PBXNativeTarget "TeeWrite" */;
+			buildPhases = (
+				AB8D94AD26B48B0400BEEF71 /* Headers */,
+				AB8D94AE26B48B0400BEEF71 /* Sources */,
+				AB8D94AF26B48B0400BEEF71 /* Frameworks */,
+				AB8D94B026B48B0400BEEF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeeWrite;
+			productName = TeeWriter;
+			productReference = AB8D94B226B48B0400BEEF71 /* TeeWrite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB8D94B926B48B0400BEEF71 /* TeeWriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB8D94CD26B48B0400BEEF71 /* Build configuration list for PBXNativeTarget "TeeWriteTests" */;
+			buildPhases = (
+				AB8D94B626B48B0400BEEF71 /* Sources */,
+				AB8D94B726B48B0400BEEF71 /* Frameworks */,
+				AB8D94B826B48B0400BEEF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB8D94BD26B48B0400BEEF71 /* PBXTargetDependency */,
+				AB8D94BF26B48B0400BEEF71 /* PBXTargetDependency */,
+			);
+			name = TeeWriteTests;
+			productName = TeeWriterTests;
+			productReference = AB8D94BA26B48B0400BEEF71 /* TeeWriteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB8D949126B48AC000BEEF71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AB8D949826B48AC000BEEF71 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AB8D94B126B48B0400BEEF71 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					AB8D94B926B48B0400BEEF71 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AB8D949826B48AC000BEEF71;
+					};
+				};
+			};
+			buildConfigurationList = AB8D949426B48AC000BEEF71 /* Build configuration list for PBXProject "TeeWriter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB8D949026B48AC000BEEF71;
+			productRefGroup = AB8D949A26B48AC000BEEF71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB8D949826B48AC000BEEF71 /* TeeWriterExample */,
+				AB8D94B126B48B0400BEEF71 /* TeeWrite */,
+				AB8D94B926B48B0400BEEF71 /* TeeWriteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB8D949726B48AC000BEEF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D94A426B48AC100BEEF71 /* Preview Assets.xcassets in Resources */,
+				AB8D94A126B48AC100BEEF71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8D94B026B48B0400BEEF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8D94B826B48B0400BEEF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB8D949526B48AC000BEEF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D949F26B48AC000BEEF71 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8D94AE26B48B0400BEEF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D94D326B48B1700BEEF71 /* TeeWriter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8D94B626B48B0400BEEF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D94C226B48B0400BEEF71 /* TeeWriterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB8D94BD26B48B0400BEEF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB8D94B126B48B0400BEEF71 /* TeeWrite */;
+			targetProxy = AB8D94BC26B48B0400BEEF71 /* PBXContainerItemProxy */;
+		};
+		AB8D94BF26B48B0400BEEF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB8D949826B48AC000BEEF71 /* TeeWriterExample */;
+			targetProxy = AB8D94BE26B48B0400BEEF71 /* PBXContainerItemProxy */;
+		};
+		AB8D94C626B48B0400BEEF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB8D94B126B48B0400BEEF71 /* TeeWrite */;
+			targetProxy = AB8D94C526B48B0400BEEF71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB8D94A626B48AC100BEEF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB8D94A726B48AC100BEEF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB8D94A926B48AC100BEEF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Examples/TeeWriterExample/Preview Content\"";
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Examples/TeeWriterExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.TeeWriterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB8D94AA26B48AC100BEEF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Examples/TeeWriterExample/Preview Content\"";
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Examples/TeeWriterExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.TeeWriterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB8D94CA26B48B0400BEEF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/TeeWriter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.TeeWriter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB8D94CB26B48B0400BEEF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/TeeWriter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.TeeWriter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB8D94CE26B48B0400BEEF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				INFOPLIST_FILE = Tests/TeeWriterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.TeeWriterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeeWriterExample.app/TeeWriterExample";
+			};
+			name = Debug;
+		};
+		AB8D94CF26B48B0400BEEF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				INFOPLIST_FILE = Tests/TeeWriterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.TeeWriterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeeWriterExample.app/TeeWriterExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB8D949426B48AC000BEEF71 /* Build configuration list for PBXProject "TeeWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8D94A626B48AC100BEEF71 /* Debug */,
+				AB8D94A726B48AC100BEEF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8D94A826B48AC100BEEF71 /* Build configuration list for PBXNativeTarget "TeeWriterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8D94A926B48AC100BEEF71 /* Debug */,
+				AB8D94AA26B48AC100BEEF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8D94C926B48B0400BEEF71 /* Build configuration list for PBXNativeTarget "TeeWrite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8D94CA26B48B0400BEEF71 /* Debug */,
+				AB8D94CB26B48B0400BEEF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8D94CD26B48B0400BEEF71 /* Build configuration list for PBXNativeTarget "TeeWriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8D94CE26B48B0400BEEF71 /* Debug */,
+				AB8D94CF26B48B0400BEEF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB8D949126B48AC000BEEF71 /* Project object */;
+}
