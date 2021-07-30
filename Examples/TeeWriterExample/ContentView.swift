@@ -1,5 +1,6 @@
 import SwiftUI
 import TeeWrite
+import OSLog
 
 // model for Stdout Tee Writing
 class StdoutTeeWrite: ObservableObject {
@@ -31,10 +32,18 @@ struct ContentView: View {
     @State var input = ""
     var body: some View {
         VStack {
-            TextField("text to print", text: $input).padding()
-            Button("print") {
-                NSLog(input)
-            }.padding()
+            TextField("text to print/nslog/os_log", text: $input).padding()
+            HStack {
+                Button("print") {
+                    print(input)
+                }.padding()
+                Button("nslog") {
+                    NSLog(input)
+                }.padding()
+                Button("os_log") {
+                    os_log(.default, "%{public}@", input)
+                }.padding()
+            }
             ScrollView {
                 Text(stdoutTeeRead.text).padding().frame(maxWidth: .infinity)
             }.frame(maxWidth: .infinity)
