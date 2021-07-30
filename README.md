@@ -4,4 +4,4 @@ A simple TeeWriter for swift
 
 ## Usage
 
-[See Example](Examples/TeeWriterExample/ContextView.swift)
+[See Example](Examples/TeeWriterExamples/ContextView.swift)
