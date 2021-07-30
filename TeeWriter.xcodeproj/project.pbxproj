@@ -69,6 +69,7 @@
 		AB8D94C126B48B0400BEEF71 /* TeeWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeWriterTests.swift; sourceTree = "<group>"; };
 		AB8D94C326B48B0400BEEF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8D94D226B48B1700BEEF71 /* TeeWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeWriter.swift; sourceTree = "<group>"; };
+		AB8D94F326B4924900BEEF71 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		AB8D949026B48AC000BEEF71 = {
 			isa = PBXGroup;
 			children = (
+				AB8D94F326B4924900BEEF71 /* README.md */,
 				AB8D94E026B48D2800BEEF71 /* Examples */,
 				AB8D94DE26B48D0D00BEEF71 /* Sources */,
 				AB8D94DF26B48D2100BEEF71 /* Tests */,
