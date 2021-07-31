@@ -11,25 +11,27 @@ class StdoutTeeWrite: ObservableObject {
     private var outTeeWriter: TeeWriter!
     private var errTeeWriter: TeeWriter!
     init() {
-        setvbuf(stdout, nil, _IONBF, 0)
-        outTeeWriter = TeeWriter(handle: FileHandle.standardOutput) { [weak self] data in
-            guard let self = self else { return }
-            DispatchQueue.main.async {
-                self.text += String(data: data, encoding: .ascii) ?? "bad data"
+        typealias Setup = (UnsafeMutablePointer<FILE>, FileHandle) -> TeeWriter?
+        let setup: Setup = { file, handle in
+            setvbuf(file, nil, _IONBF, 0)
+            return TeeWriter(handle: handle) { [weak self] data in
+                guard let self = self else { return }
+                DispatchQueue.main.async {
+                    self.text += String(data: data, encoding: .ascii) ?? "bad data"
+                }
             }
         }
-        errTeeWriter = TeeWriter(handle: FileHandle.standardError) { [weak self] data in
-            guard let self = self else { return }
-            DispatchQueue.main.async {
-                self.text += String(data: data, encoding: .ascii) ?? "bad data"
-            }
-        }
+
+        self.outTeeWriter = setup(stdout, FileHandle.standardOutput)
+        self.errTeeWriter = setup(stderr, FileHandle.standardError)
     }
 }
 
 struct ContentView: View {
     @ObservedObject var stdoutTeeRead = StdoutTeeWrite()
     @State var input = ""
+    private var logger = Logger(subsystem: Bundle.main.bundleIdentifier!,
+                                category: "\(ContentView.self)")
     var body: some View {
         VStack {
             TextField("text to print/nslog/os_log", text: $input).padding()
@@ -41,7 +43,7 @@ struct ContentView: View {
                     NSLog(input)
                 }.padding()
                 Button("os_log") {
-                    os_log(.default, "%{public}@", input)
+                    logger.notice("\(input)")
                 }.padding()
             }
             ScrollView {
