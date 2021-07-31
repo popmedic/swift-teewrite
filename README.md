@@ -6,4 +6,4 @@ A simple TeeWriter for swift
 
 [See Example](Examples/TeeWriterExample/ContentView.swift)
 
-[preview](!preview.png)
+[!preview](preview.png)
